@@ -6,7 +6,7 @@ ARG STAGING_VERSION=latest
 FROM python:3.8-slim as seedsync_run_python_env
 
 # Install dependencies
-RUN sed -i -e's/ main/ main contrib non-free/g' /etc/apt/sources.list && \
+RUN sed -i -e's/ main/ main contrib non-free/g' /etc/apt/sources.list.d/debian.sources && \
     apt-get update && \
     apt-get install -y \
         gcc \
