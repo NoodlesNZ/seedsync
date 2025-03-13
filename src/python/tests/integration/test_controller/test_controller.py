@@ -451,9 +451,9 @@ class TestController(unittest.TestCase):
             while True:
                 self.controller.process()
         # noinspection PyUnreachableCode
-        self.assertEqual(
+        self.assertIn(
             Localization.Error.REMOTE_SERVER_INSTALL.format(
-                "blah"
+                "/usr/bin/scp: dest open \"<bad>/scanfs\": No such file or directory"
             ),
             str(error.exception)
         )
