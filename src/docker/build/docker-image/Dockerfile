@@ -39,7 +39,7 @@ ENV LANG=C.UTF-8
 RUN mkdir -p /app
 COPY src/python/pyproject.toml /app/python/
 COPY src/python/poetry.lock /app/python/
-RUN cd /app/python && poetry install --no-dev
+RUN cd /app/python && poetry install --only main
 
 
 # Creates environment for Python dev
