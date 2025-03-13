@@ -15,8 +15,8 @@ paste = "*"
 patool = "*"
 pexpect = "*"
 pytz = "*"
-requests = "*"
-tblib = "*"
+requests = "2.26.*"
+tblib = "1.0.1"
 timeout-decorator = "*"
 
 [tool.poetry.dev-dependencies]

@@ -8,7 +8,9 @@ RUN apt-get install -y software-properties-common && \
     apt-get update && \
     apt-get install -y \
         openssh-server \
-        rar
+        p7zip \
+        p7zip-full \
+        p7zip-rar
 
 ADD src/docker/test/python/entrypoint.sh /app/
 
