@@ -395,7 +395,7 @@ class TestController(unittest.TestCase):
                 self.controller.process()
         # noinspection PyUnreachableCode
         self.assertEqual(
-            Localization.Error.REMOTE_SERVER_INSTALL.format("Bad hostname: <bad>"),
+            Localization.Error.REMOTE_SERVER_INSTALL.format("hostname contains invalid characters"),
             str(error.exception)
         )
 
