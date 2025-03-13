@@ -453,7 +453,7 @@ class TestController(unittest.TestCase):
         # noinspection PyUnreachableCode
         self.assertEqual(
             Localization.Error.REMOTE_SERVER_INSTALL.format(
-                "/usr/bin/scp: dest open \"<bad>/scanfs\": No such file or directory /usr/bin/scp: failed to upload file " + self.context.config.lftp.local_path + " to <bad>/scanfs"
+                "blah"
             ),
             str(error.exception)
         )
