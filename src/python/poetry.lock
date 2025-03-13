@@ -882,17 +882,14 @@ files = [
 
 [[package]]
 name = "tblib"
-version = "1.0.1"
-description = "Traceback fiddling library."
+version = "1.7.0"
+description = "Traceback serialization library."
 optional = false
-python-versions = "*"
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 files = [
-    {file = "tblib-1.0.1-py3-none-any.whl", hash = "sha256:ae5904b924033112ccd987f742237eaeebd88282b50c4ad0818bef6b7643c9e2"},
-    {file = "tblib-1.0.1.tar.gz", hash = "sha256:a86cbbec76b7aaa54b9f8dd0c3274ad8231f47f86ab39b9a3e637481f8afdaf3"},
+    {file = "tblib-1.7.0-py2.py3-none-any.whl", hash = "sha256:289fa7359e580950e7d9743eab36b0691f0310fce64dee7d9c31065b8f723e23"},
+    {file = "tblib-1.7.0.tar.gz", hash = "sha256:059bd77306ea7b419d4f76016aef6d7027cc8a0785579b5aad198803435f882c"},
 ]
-
-[package.dependencies]
-six = "*"
 
 [[package]]
 name = "testfixtures"
@@ -1077,4 +1074,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "~3.8"
-content-hash = "23382d369a264cf5e5d35cd7251a3eb7063d418d05ee2abf2092c42ea0b557fd"
+content-hash = "1c53f574396e7cb6c97f0b4e84c1533942127eea7c379a4301524906283fd5f6"
