@@ -8,9 +8,7 @@ RUN apt-get install -y software-properties-common && \
     apt-get update && \
     apt-get install -y \
         openssh-server \
-        p7zip \
-        p7zip-full \
-        p7zip-rar
+        rar
 
 ADD src/docker/test/python/entrypoint.sh /app/
 
@@ -39,4 +37,4 @@ WORKDIR /src/
 ENV PYTHONPATH=/src
 
 ENTRYPOINT ["/app/entrypoint.sh"]
-CMD ["pytest", "-v"]
+CMD ["pytest", "-v -x"]
